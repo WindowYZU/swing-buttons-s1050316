@@ -32,10 +32,12 @@ public class ButtonSample {
         //1. 建立 button，text 設定為 Find
         //2. 建立 icon
         //3. 設定 icon
-        JButton button=null;
-        ImageIcon icon=null;
-        ImageIcon icon2=new ImageIcon(icon.getImage().getScaledInstance(25, 25, Image.SCALE_SMOOTH));
-        button.setIcon();
+        JButton button=new JButton("Find");
+        //button.setMnemonic('F');
+        ImageIcon icon=new ImageIcon(new URL("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkzzRdZz1SJ5RNShTLIZ7IdFHnNm7i2ADybq-Wj2Ad6hmvD2B3GA"));
+        ImageIcon icon2=new ImageIcon(
+                icon.getImage().getScaledInstance(100, 100, Image.SCALE_SMOOTH));
+        button.setIcon(icon2);
         ////////////////////////////////////
         frame.add(button);
         frame.getRootPane().setDefaultButton(button);
