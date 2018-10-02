@@ -29,8 +29,10 @@ public class ActionListenerSample1 {
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
         frame.setLayout(new FlowLayout());
         
-        JButton button=new JButton("click");
+        JButton button=new JButton("clicked");
         //利用 addActionListener 將 SampleActionListener 設定給 button
+        SampleActionListener l = new SampleActionListener();
+        button.addActionListener(l);
         
         //////////////////////////////////////////////////////
         frame.add(button);
