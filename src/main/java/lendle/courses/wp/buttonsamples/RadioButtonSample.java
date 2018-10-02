@@ -53,7 +53,7 @@ public class RadioButtonSample {
                 JOptionPane.showMessageDialog(null,str);
                 
             }
-        }
+        };
         radio1.addActionListener(listener);
         radio2.addActionListener(listener);
         checkbox.addActionListener(listener);
